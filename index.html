@@ -1,1 +1,93 @@
-hola mundo
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <style>
+      html {
+          background-color: bisque;
+      }
+
+      .container-personal {
+          margin: auto;
+          display: grid;
+          grid-template-columns: max-content;
+          width: max-content;
+      }
+
+      .container-personal div.card h2 {
+          text-align: center;
+      }
+
+      .container-personal img {
+          width: 100%;
+      }
+
+      h1 {
+          text-align: center;
+      }
+
+      .card {
+          display: grid;
+          grid-template-columns: 1fr .7fr;
+          column-gap: 30px;
+          box-shadow: 1px 1px 10px #808080;
+      }
+
+      ul li {
+          list-style: none;
+      }
+
+      ul {
+          margin-top: 20px;
+          text-align: center;
+          padding-left: 0;
+      }
+      .container-logos {
+          display:grid;
+          grid-template-columns: 1fr 1fr 1fr;
+          max-width: 700px;
+          margin: auto;
+          text-align: center;
+          padding-top: 100px;
+      }
+      .container-logos img { max-width: 100px; }
+      @media (max-width:650px){
+          .container-personal img {
+              width: 100%;
+          }
+          .card { grid-template-columns: 1fr; }
+      }
+  </style>
+</head>
+<body>
+<h1>Gonzalo. Infogon.</h1>
+<div class="container-personal">
+  <div class="card">
+    <img src="image/infogon.jpg" alt="imagen personal" title="Imagen personal"/>
+    <div>
+      <h2>Desarrollo Web.</h2>
+      <ul>
+        <li><h4>PHP</h4></li>
+        <li><h4>HTML</h4></li>
+        <li><h4>CSS</h4></li>
+        <li><h4>JS</h4></li>
+        <li><h4>Vue 3</h4></li>
+        <li><h4>Laravel</h4></li>
+      </ul>
+    </div>
+  </div>
+</div>
+<div class="container-logos">
+  <a href="https://twitter.com/Infogon" target="_blank">
+    <img src="image/twitter.svg" alt="logo twitter" title="Logo Twitter"/>
+  </a>
+  <a href="https://www.linkedin.com/in/gonzalo-nandez-batista/">
+    <img src="image/linkedin.svg" alt="linkedin logo" title="Logo Linkedin"/>
+  </a>
+  <a href="https://github.com/Gonzalo2310">
+    <img src="image/github.svg" alt="logo github" title="Logo Github"/>
+  </a>
+</div>
+</body>
+</html>
