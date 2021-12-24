@@ -31,13 +31,15 @@
           display: grid;
           grid-template-columns: 1fr .7fr;
           column-gap: 30px;
-          box-shadow: 1px 1px 10px #808080;
+          box-shadow: 2px 2px 10px #0d0d0d;
       }
 
       ul li {
           list-style: none;
       }
-
+      ul li h4 {
+          text-transform: uppercase;
+      }
       ul {
           margin-top: 20px;
           text-align: center;
@@ -46,12 +48,14 @@
       .container-logos {
           display:grid;
           grid-template-columns: 1fr 1fr 1fr;
-          max-width: 700px;
+          max-width: 600px;
           margin: auto;
           text-align: center;
           padding-top: 100px;
       }
-      .container-logos img { max-width: 100px; }
+      .container-logos div { max-width: 100px; text-align: center; margin:auto; }
+      .container-logos div:nth-child(3n) { max-width: 130px; text-align: center;}
+      .container-logos div img { width: 100%;  align-self: center; }
       @media (max-width:650px){
           .container-personal img {
               width: 100%;
@@ -61,7 +65,7 @@
   </style>
 </head>
 <body>
-<h1>Gonzalo. Infogon.</h1>
+<h1>Gonzalo Nández. Infogon.</h1>
 <div class="container-personal">
   <div class="card">
     <img src="image/infogon.jpg" alt="imagen personal" title="Imagen personal"/>
@@ -79,15 +83,21 @@
   </div>
 </div>
 <div class="container-logos">
+  <div>
   <a href="https://twitter.com/Infogon" target="_blank">
     <img src="image/twitter.svg" alt="logo twitter" title="Logo Twitter"/>
   </a>
+    </div>
+  <div>
   <a href="https://www.linkedin.com/in/gonzalo-nandez-batista/" target="_blank">
     <img src="image/linkedin.svg" alt="linkedin logo" title="Logo Linkedin"/>
   </a>
+    </div>
+  <div>
   <a href="https://github.com/Gonzalo2310" target="_blank">
     <img src="image/github.svg" alt="logo github" title="Logo Github"/>
   </a>
+    </div>
 </div>
 </body>
 </html>
